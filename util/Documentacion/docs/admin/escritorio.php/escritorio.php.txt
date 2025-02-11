@@ -1,0 +1,1 @@
+Archivo principal de la aplicación que consiste en el escritorio a partir del cual el usuario administrador puede realizar cualquier operación con la información contenida en la base de datos

@@ -1,0 +1,1 @@
+Este archivo se llama inmediatamente después del formulario de inicio de sesión y sirve para validar las credenciales enviadas contra la base de datos y si la validación es correcta en ese caso nos reenvía al escritorio

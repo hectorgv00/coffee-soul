@@ -1,0 +1,1 @@
+Este archivo contiene el formulario de inicio estático en formato html que da acceso al panel de control este archivo consta de un formulario que lleva al archivo login.php donde nuestras credenciales de acceso serán validadas para confirmar si se nos da acceso al sistema
