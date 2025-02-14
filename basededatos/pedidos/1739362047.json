@@ -1,0 +1,18 @@
+{
+    "cliente": {
+        "nombre": "Manolo",
+        "apellidos": "Alcantara",
+        "email": "Perez"
+    },
+    "pedido": {
+        "fecha": "2025-2-12",
+        "numerodepedido": "202521213727"
+    },
+    "productos": [
+        {
+            "nombre": "Té negro",
+            "descripcion": "Te negro potente y sabroso",
+            "precio": "3.00"
+        }
+    ]
+}

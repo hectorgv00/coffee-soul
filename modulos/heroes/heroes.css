@@ -37,27 +37,19 @@
 
   button {
     padding: 20px;
-    border: 2px solid white;
     border-radius: 40px;
     width: 200px;
-    background: rgba(255, 255, 255, 0.5);
-    color: white;
+    background: white;
+    color: black;
     margin: 10px;
-
-    &:first-child {
-      background: white;
-      color: black;
-    }
-
-    &:last-child {
-      background: none;
-      color: white;
-    }
   }
 
   .texto {
     width: 800px;
     margin: auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 0.5rem;
 
     button {
       cursor: pointer;

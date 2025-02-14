@@ -50,3 +50,39 @@
 [1739216207][2025-02-10 19:36:47] Uncaught Exception: Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/coffee-soul/back/Classes/ConexionBD.php on line 11
 [1739216239][2025-02-10 19:37:19] Uncaught Exception: Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/coffee-soul/back/Classes/ConexionBD.php on line 11
 [1739216243][2025-02-10 19:37:23] Uncaught Exception: Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/coffee-soul/back/Classes/ConexionBD.php on line 11
+[1739292483][2025-02-11 16:48:03] Error [2]: include(Classes/ConexionBD.php): Failed to open stream: No such file or directory in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292483][2025-02-11 16:48:03] Error [2]: include(): Failed opening 'Classes/ConexionBD.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292483][2025-02-11 16:48:03] Uncaught Exception: Class "ConexionBD" not found in /var/www/html/coffee-soul/back/index.php on line 10
+[1739292483][2025-02-11 16:48:03] Error [2]: include(Classes/ConexionBD.php): Failed to open stream: No such file or directory in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292483][2025-02-11 16:48:03] Error [2]: include(): Failed opening 'Classes/ConexionBD.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292483][2025-02-11 16:48:03] Uncaught Exception: Class "ConexionBD" not found in /var/www/html/coffee-soul/back/index.php on line 10
+[1739292483][2025-02-11 16:48:03] Error [2]: include(Classes/ConexionBD.php): Failed to open stream: No such file or directory in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292483][2025-02-11 16:48:03] Error [2]: include(): Failed opening 'Classes/ConexionBD.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292483][2025-02-11 16:48:03] Uncaught Exception: Class "ConexionBD" not found in /var/www/html/coffee-soul/back/index.php on line 10
+[1739292483][2025-02-11 16:48:03] Error [2]: include(Classes/ConexionBD.php): Failed to open stream: No such file or directory in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292483][2025-02-11 16:48:03] Error [2]: include(): Failed opening 'Classes/ConexionBD.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292483][2025-02-11 16:48:03] Uncaught Exception: Class "ConexionBD" not found in /var/www/html/coffee-soul/back/index.php on line 10
+[1739292483][2025-02-11 16:48:03] Error [2]: include(Classes/ConexionBD.php): Failed to open stream: No such file or directory in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292483][2025-02-11 16:48:03] Error [2]: include(): Failed opening 'Classes/ConexionBD.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292483][2025-02-11 16:48:03] Uncaught Exception: Class "ConexionBD" not found in /var/www/html/coffee-soul/back/index.php on line 10
+[1739292607][2025-02-11 16:50:07] Error [2]: include(Classes/ConexionBD.php): Failed to open stream: No such file or directory in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292607][2025-02-11 16:50:07] Error [2]: include(): Failed opening 'Classes/ConexionBD.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292607][2025-02-11 16:50:07] Uncaught Exception: Class "ConexionBD" not found in /var/www/html/coffee-soul/back/index.php on line 10
+[1739292607][2025-02-11 16:50:07] Error [2]: include(Classes/ConexionBD.php): Failed to open stream: No such file or directory in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292607][2025-02-11 16:50:07] Error [2]: include(): Failed opening 'Classes/ConexionBD.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292607][2025-02-11 16:50:07] Uncaught Exception: Class "ConexionBD" not found in /var/www/html/coffee-soul/back/index.php on line 10
+[1739292607][2025-02-11 16:50:07] Error [2]: include(Classes/ConexionBD.php): Failed to open stream: No such file or directory in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292607][2025-02-11 16:50:07] Error [2]: include(): Failed opening 'Classes/ConexionBD.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292607][2025-02-11 16:50:07] Uncaught Exception: Class "ConexionBD" not found in /var/www/html/coffee-soul/back/index.php on line 10
+[1739292607][2025-02-11 16:50:07] Error [2]: include(Classes/ConexionBD.php): Failed to open stream: No such file or directory in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292607][2025-02-11 16:50:07] Error [2]: include(): Failed opening 'Classes/ConexionBD.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292607][2025-02-11 16:50:07] Uncaught Exception: Class "ConexionBD" not found in /var/www/html/coffee-soul/back/index.php on line 10
+[1739292607][2025-02-11 16:50:07] Error [2]: include(Classes/ConexionBD.php): Failed to open stream: No such file or directory in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292607][2025-02-11 16:50:07] Error [2]: include(): Failed opening 'Classes/ConexionBD.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/coffee-soul/back/index.php on line 6
+[1739292607][2025-02-11 16:50:07] Uncaught Exception: Class "ConexionBD" not found in /var/www/html/coffee-soul/back/index.php on line 10
+[1739300415][2025-02-11 19:00:15] Error [2]: file_put_contents(../basededatos/pedidos/1739300415.json): Failed to open stream: Permission denied in /var/www/html/coffee-soul/back/index.php on line 26
+[1739356654][2025-02-12 10:37:34] Error [2]: file_put_contents(../basededatos/pedidos/1739356654.json): Failed to open stream: Permission denied in /var/www/html/coffee-soul/back/index.php on line 26
+[1739356779][2025-02-12 10:39:39] Error [2]: file_put_contents(../basededatos/pedidos/1739356779.json): Failed to open stream: Permission denied in /var/www/html/coffee-soul/back/index.php on line 26
+[1739359074][2025-02-12 11:17:54] Error [2]: file_put_contents(../basededatos/pedidos/1739359074.json): Failed to open stream: Permission denied in /var/www/html/coffee-soul/back/index.php on line 28
+[1739359239][2025-02-12 11:20:39] Error [2]: file_put_contents(../basededatos/pedidos/1739359239.json): Failed to open stream: Permission denied in /var/www/html/coffee-soul/back/index.php on line 28
+[1739359546][2025-02-12 11:25:46] Error [2]: file_put_contents(../basededatos/pedidos/1739359546.json): Failed to open stream: Permission denied in /var/www/html/coffee-soul/back/index.php on line 28

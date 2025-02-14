@@ -1,5 +1,4 @@
-<main id="blog"> 
-	Esta es la página del blog
+<main id="blog">
 </main>
 <template id="plantillaentrada">
 	<article>
@@ -13,8 +12,8 @@
 </template>
 
 <script>
-	<?php include "blog.js"?>
+	<?php include "blog.js" ?>
 </script>
 <style>
-	<?php include "blog.css"?>
+	<?php include "blog.css" ?>
 </style>

@@ -1,0 +1,12 @@
+{
+    "cliente": {
+        "nombre": "d",
+        "apellidos": "d",
+        "email": "d"
+    },
+    "pedido": {
+        "fecha": "2025-2-12",
+        "numerodepedido": "2025212123524"
+    },
+    "productos": null
+}

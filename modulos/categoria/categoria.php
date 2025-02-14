@@ -1,66 +1,96 @@
 <!-- Listado de bloques en la página de categoría -->
 <main>
-    <?php
-    include "modulos/bloque/bloque.php";											// Incluyo los bloques
-    
-    include "config.php";	
-    
-		$peticion = "
+	<?php
+	include "modulos/bloque/bloque.php";											// Incluyo los bloques
+
+	include "config.php";
+
+	$peticion = "
 		SELECT * 
 		FROM bloquescategorias
-		WHERE categorias_nombre = ".$_GET['cat']."
+		WHERE categorias_nombre = " . $_GET['cat'] . "
 		;";																					// Creo una petición
-		//echo $peticion;
-		$resultado = mysqli_query($conexion, $peticion);						// Ejecuto la petición contra el servidor
-																								// Creo un array vacio
-		while($fila = mysqli_fetch_array($resultado, MYSQLI_ASSOC)){		// Para cada uno de los resultados
-			if($fila['tipobloque_tipo'] == "1"){									// Si el bloque es de tipo 1
-				$bloque = new BloqueCompleto(
-					$fila['titulo'], 
-					$fila['subtitulo']
-					);																			// Creo una nueva instancia
-    			echo $bloque->getBloque();												// Lanzo el html del bloque
-			}else if($fila['tipobloque_tipo'] == "2"){							// Si el bloque es de tipo 2
-				$bloque = new BloqueCaja(
-					$fila['titulo'], 
-					$fila['subtitulo']
-					);																		// Creo una nueva instancia
-    			echo $bloque->getBloque();												// Lanzo el html del bloque
-			}else if($fila['tipobloque_tipo'] == "3"){							// Si el bloque es de tipo 2
-				$bloque = new BloqueMosaico(
-					$fila['titulo'], 
-					$fila['subtitulo'],
-					$fila['texto'],
-					"",
-					"",
-					["uno","dos","tres","cuatro"]
-					
-					);																		// Creo una nueva instancia
-    			echo $bloque->getBloque();											// Lanzo el html del bloque
-			}else if($fila['tipobloque_tipo'] == "4"){							// Si el bloque es de tipo 2
-				$bloque = new BloqueCajaYoutube(
-					$fila['titulo'], 
-					$fila['subtitulo'],
-					$fila['texto'],
-					"",
-					"",
-					["uno","dos","tres","cuatro"]
-					
-					);																		// Creo una nueva instancia
-    			echo $bloque->getBloque();											// Lanzo el html del bloque
-			}
-		 }
-																		
-		
+	//echo $peticion;
+	$resultado = mysqli_query($conexion, $peticion);						// Ejecuto la petición contra el servidor
+	// Creo un array vacio
+	while ($fila = mysqli_fetch_array($resultado, MYSQLI_ASSOC)) {		// Para cada uno de los resultados
+		if ($fila['tipobloque_tipo'] == "1") {									// Si el bloque es de tipo 1
+			$bloque = new BloqueCompleto(
+				$fila['titulo'],
+				$fila['subtitulo'],
+				$fila['texto'],
+				$fila['imagen'],
+				$fila['fondo'],
 
-    
-    ?>
+			);																			// Creo una nueva instancia
+			echo $bloque->getBloque();												// Lanzo el html del bloque
+		} else if ($fila['tipobloque_tipo'] == "2") {							// Si el bloque es de tipo 2
+			$bloque = new BloqueCaja(
+				$fila['titulo'],
+				$fila['subtitulo'],
+				$fila['texto'],
+				$fila['imagen'],
+				$fila['fondo'],
+
+			);																		// Creo una nueva instancia
+			echo $bloque->getBloque();												// Lanzo el html del bloque
+		} else if ($fila['tipobloque_tipo'] == "3") {							// Si el bloque es de tipo 2
+			$bloque = new BloqueMosaico(
+				$fila['titulo'],
+				$fila['subtitulo'],
+				$fila['texto'],
+				$fila['imagen'],
+				$fila['fondo'],
+				["uno", "dos", "tres", "cuatro"]
+
+			);																		// Creo una nueva instancia
+			echo $bloque->getBloque();											// Lanzo el html del bloque
+		} else if ($fila['tipobloque_tipo'] == "4") {							// Si el bloque es de tipo 2
+			$bloque = new BloqueCajaYoutube(
+				$fila['titulo'],
+				$fila['subtitulo'],
+				$fila['texto'],
+				$fila['imagen'],
+				$fila['fondo'],
+
+				["uno", "dos", "tres", "cuatro"]
+
+			);																		// Creo una nueva instancia
+		}
+	}
+
+
+	$peticionProductosCategoria = "
+		SELECT * 
+		FROM productos
+		WHERE categorias_nombre = " . $_GET['cat'] . "
+		;";																					// Creo una petición
+
+	$resultadoProductosCategoria = mysqli_query($conexion, $peticionProductosCategoria);						// Ejecuto la petición contra el servidor
+	$content = "";
+	$content .= "<div class='productos'>";
+	$content .= "<div class='productosBox'>";
+
+	while ($product = mysqli_fetch_array($resultadoProductosCategoria, MYSQLI_ASSOC)) {
+		$content .= "<a class='producto' href='producto.php?prod=" . $product['Identificador'] . "'>";
+		$content .= "<h3>" . $product['titulo'] . "</h3>";
+		$content .= "<p>" . $product['descripcion'] . "</p>";
+		$content .= "<p>" . $product['precio'] . "€</p>";
+		$content .= "</a>";
+	};
+
+	$content .= "</div>";
+	$content .= "</div>";
+
+	echo $content;
+
+	?>
 </main>
 <script>
-    <?php include "categoria.js"; ?>
+	<?php include "categoria.js"; ?>
 </script>
 <style>
-    <?php 
-    	include "categoria.css"; 
-    	?>
+	<?php
+	include "categoria.css";
+	?>
 </style>
